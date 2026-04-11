@@ -1,0 +1,161 @@
+{
+  "result": {
+    "properties": [
+      {
+        "code": "switch_1",
+        "custom_name": "",
+        "dp_id": 1,
+        "time": 1763321140662,
+        "type": "bool",
+        "value": true
+      },
+      {
+        "code": "countdown_1",
+        "custom_name": "",
+        "dp_id": 9,
+        "time": 1763321140662,
+        "type": "value",
+        "value": 0
+      },
+      {
+        "code": "add_ele",
+        "custom_name": "",
+        "dp_id": 17,
+        "time": 1765823265000,
+        "type": "value",
+        "value": 8
+      },
+      {
+        "code": "cur_current",
+        "custom_name": "",
+        "dp_id": 18,
+        "time": 1765823682696,
+        "type": "value",
+        "value": 202
+      },
+      {
+        "code": "cur_power",
+        "custom_name": "",
+        "dp_id": 19,
+        "time": 1765823682696,
+        "type": "value",
+        "value": 184
+      },
+      {
+        "code": "cur_voltage",
+        "custom_name": "",
+        "dp_id": 20,
+        "time": 1765823647650,
+        "type": "value",
+        "value": 2300
+      },
+      {
+        "code": "test_bit",
+        "custom_name": "",
+        "dp_id": 21,
+        "time": 1763321140731,
+        "type": "value",
+        "value": 1
+      },
+      {
+        "code": "voltage_coe",
+        "custom_name": "",
+        "dp_id": 22,
+        "time": 1763321140731,
+        "type": "value",
+        "value": 574
+      },
+      {
+        "code": "electric_coe",
+        "custom_name": "",
+        "dp_id": 23,
+        "time": 1763321140731,
+        "type": "value",
+        "value": 27916
+      },
+      {
+        "code": "power_coe",
+        "custom_name": "",
+        "dp_id": 24,
+        "time": 1763321140731,
+        "type": "value",
+        "value": 15358
+      },
+      {
+        "code": "electricity_coe",
+        "custom_name": "",
+        "dp_id": 25,
+        "time": 1763321140731,
+        "type": "value",
+        "value": 2710
+      },
+      {
+        "code": "fault",
+        "custom_name": "",
+        "dp_id": 26,
+        "time": 1763321140672,
+        "type": "bitmap",
+        "value": 0
+      },
+      {
+        "code": "relay_status",
+        "custom_name": "",
+        "dp_id": 38,
+        "time": 1763321140681,
+        "type": "enum",
+        "value": "on"
+      },
+      {
+        "code": "light_mode",
+        "custom_name": "",
+        "dp_id": 39,
+        "time": 1763321142709,
+        "type": "enum",
+        "value": "none"
+      },
+      {
+        "code": "child_lock",
+        "custom_name": "",
+        "dp_id": 40,
+        "time": 1763321140695,
+        "type": "bool",
+        "value": false
+      },
+      {
+        "code": "cycle_time",
+        "custom_name": "",
+        "dp_id": 41,
+        "time": 1763321140692,
+        "type": "string",
+        "value": ""
+      },
+      {
+        "code": "random_time",
+        "custom_name": "",
+        "dp_id": 42,
+        "time": 1763321140687,
+        "type": "string",
+        "value": ""
+      },
+      {
+        "code": "switch_inching",
+        "custom_name": "",
+        "dp_id": 43,
+        "time": 1763321140719,
+        "type": "string",
+        "value": ""
+      },
+      {
+        "code": "overcharge_switch",
+        "custom_name": "",
+        "dp_id": 51,
+        "time": 1763321140668,
+        "type": "bool",
+        "value": false
+      }
+    ]
+  },
+  "success": true,
+  "t": 1765823683385,
+  "tid": "xxx"
+}
