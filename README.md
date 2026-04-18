@@ -27,3 +27,34 @@ Simple data, such as current power consumption and voltage, are visible in a sta
 sum “value” = 359 ~ 0.36KWh 
 
 <img width="738" height="1600" alt="image" src="https://github.com/user-attachments/assets/f98293b7-8860-4772-b3d2-f1803405f714" />
+
+The summed values ​​from the query match the readings from the application. As you can see, the value is rounded to two decimal places.
+
+
+Install the phyton package on the Zabbix server:
+apt install -y python3-venv
+//Installs a module that allows you to create isolated Python environments
+python3 -m venv /opt/zabbix/tuya/venv
+//Creates a separate Python environment in: /opt/zabbix/tuya/venv
+source /opt/zabbix/tuya/venv/bin/activate
+//Activates venv
+pip install tuya-iot-py-sdk
+//Installs the Tuya SDK
+
+Zabbix server user-related commands for the script:
+
+useradd -r -s /bin/false tuya
+//useradd – creates a user on Linux
+//-r – system user (no home directory, no login)
+//-s /bin/false – cannot log in as this user
+
+mkdir -p /opt/zabbix/tuya
+chown -R tuya:tuya /opt/zabbix/tuya
+//chown -R tuya:tuya – sets the owner
+
+
+
+Command to create the script:
+nano /opt/zabbix/tuya/tuya_device.py
+
+
