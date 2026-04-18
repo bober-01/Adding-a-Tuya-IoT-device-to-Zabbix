@@ -2,7 +2,7 @@
 
 This repository demonstrates how to monitor parameters of a **Tuya smart device** using a **Python script** and integrate the data into **Zabbix**.
 
-The goal is to retrieve both:
+The goal is to achieve both:
 - real-time values (power, voltage, current)
 - aggregated daily energy consumption (kWh)
 
@@ -38,13 +38,13 @@ Then:
 3. Search for your device
 4. Identify datapoints you want to monitor
 
+<img src="https://github.com/user-attachments/assets/2823b6e9-9512-4461-97aa-dd79ae564cb4" />
 ---
 
 ## 📊 Example API Data
 
-### Real-time values
+### Overview of selected data from DP id
 
-<img src="https://github.com/user-attachments/assets/2823b6e9-9512-4461-97aa-dd79ae564cb4" />
 <img src="https://github.com/user-attachments/assets/fc0da116-cdb0-4d08-bc2f-032f33cf515c" />
 
 ---
@@ -52,6 +52,7 @@ Then:
 ### Energy logs
 
 <img width="1916" height="915" alt="image" src="https://github.com/user-attachments/assets/774cfe2a-752c-43c9-9ae5-26f5960cd7ec" />
+<img src="https://github.com/user-attachments/assets/6cfc1022-60fb-497a-ac19-8966296408fd" />
 
 Each entry:
 - represents energy usage in **Wh**
@@ -61,7 +62,7 @@ Each entry:
 ```
 sum(value) = 359 → 0.36 kWh
 ```
-<img src="https://github.com/user-attachments/assets/6cfc1022-60fb-497a-ac19-8966296408fd" />
+
 
 <img width="738" height="1600" alt="image" src="https://github.com/user-attachments/assets/f98293b7-8860-4772-b3d2-f1803405f714" />
 
@@ -311,7 +312,6 @@ Use JSONPath to extract values
 
 - Tuya API returns energy in **Wh**
 - Script converts to **kWh**
-- Logs appear ~every 30 minutes
 - Values match Tuya app (rounded)
 
 ---
