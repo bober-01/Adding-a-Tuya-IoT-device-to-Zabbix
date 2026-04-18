@@ -66,4 +66,26 @@ chmod 750 /opt/zabbix/tuya/tuya_device.py
 
 
 
+ln -s /opt/zabbix/tuya/tuya_device.py /usr/lib/zabbix/externalscripts/tuya_device.py
+chown -h zabbix:zabbix /usr/lib/zabbix/externalscripts/tuya_device.py
+
+Create a script link in the Zabbix directory and set the link owner to the zabbix user so that Zabbix can see and run the script from the correct location:
+ln -s /opt/zabbix/tuya/tuya_device.py /usr/lib/zabbix/externalscripts/tuya_device.py
+chown -h zabbix:zabbix /usr/lib/zabbix/externalscripts/tuya_device.py
+
+Test what the script returns:
+
+Adding a Host - without an interface. Data will be collected from the "Master Item" value added
+<img width="1047" height="558" alt="image" src="https://github.com/user-attachments/assets/1bb8bc73-f43e-403f-a40e-2e505d47cbc2" />
+
+Master Item, which runs through the entire script and will be used to display other data of interest to us.
+<img width="1045" height="727" alt="image" src="https://github.com/user-attachments/assets/43137332-d49d-44af-84ee-450070ece8a1" />
+
+
+Adding Item for current power consumption:
+
+<img width="1042" height="677" alt="image" src="https://github.com/user-attachments/assets/2ef4938e-ea5f-401c-aa92-f055707a52da" />
+
+Preprocessing tab, to specify what should be read from the script.
+<img width="1048" height="276" alt="image" src="https://github.com/user-attachments/assets/9e21e77e-694c-4a12-9e30-5778047e5074" />
 
