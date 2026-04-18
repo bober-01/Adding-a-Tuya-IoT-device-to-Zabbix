@@ -58,3 +58,12 @@ Command to create the script:
 nano /opt/zabbix/tuya/tuya_device.py
 
 
+
+The command to change the script permissions to block access for the rest of the system:
+chown tuya:tuya /opt/zabbix/tuya/tuya_device.py
+chmod 750 /opt/zabbix/tuya/tuya_device.py
+
+
+
+
+
