@@ -298,6 +298,9 @@ Use JSONPath to extract values
 
 ## ✅ Final Result
 
+<img width="1152" height="214" alt="image" src="https://github.com/user-attachments/assets/161a54d3-66ad-42a0-825a-f1f4cde96e0c" />
+
+
 - Real-time monitoring
 - Daily energy usage (kWh)
 - Clean integration with Zabbix
