@@ -7,7 +7,8 @@ The goal is to achieve both:
 - aggregated daily energy consumption (kWh)
 
 <img width="1152" height="214" alt="image" src="https://github.com/user-attachments/assets/161a54d3-66ad-42a0-825a-f1f4cde96e0c" />
----
+<br></br>
+
 <img width="1918" height="693" alt="image" src="https://github.com/user-attachments/assets/e24581e9-b603-47c4-9652-cdb415f6d887" />
 
 
