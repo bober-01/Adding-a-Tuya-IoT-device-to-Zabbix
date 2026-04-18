@@ -8,6 +8,8 @@ The goal is to achieve both:
 
 <img width="1152" height="214" alt="image" src="https://github.com/user-attachments/assets/161a54d3-66ad-42a0-825a-f1f4cde96e0c" />
 
+<img width="1918" height="693" alt="image" src="https://github.com/user-attachments/assets/e24581e9-b603-47c4-9652-cdb415f6d887" />
+
 
 ---
 
@@ -303,6 +305,8 @@ Use JSONPath to extract values
 ## ✅ Final Result
 
 <img width="1152" height="214" alt="image" src="https://github.com/user-attachments/assets/161a54d3-66ad-42a0-825a-f1f4cde96e0c" />
+
+<img width="1918" height="693" alt="image" src="https://github.com/user-attachments/assets/49487329-5a93-45c7-88de-1db2599841d3" />
 
 
 - Real-time monitoring
