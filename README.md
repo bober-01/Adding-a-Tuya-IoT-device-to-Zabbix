@@ -6,6 +6,9 @@ The goal is to achieve both:
 - real-time values (power, voltage, current)
 - aggregated daily energy consumption (kWh)
 
+<img width="1152" height="214" alt="image" src="https://github.com/user-attachments/assets/161a54d3-66ad-42a0-825a-f1f4cde96e0c" />
+
+
 ---
 
 ## 📌 How it works
