@@ -173,6 +173,334 @@ chown -h zabbix:zabbix /usr/lib/zabbix/externalscripts/tuya_device.py
 
 Test what the script returns:
 
+<pre>
+(venv) root@zabbix:~# python3 ./tuya_device.py
+[2025-12-20 23:50:35,129] [tuya-openapi] Request: method = POST,                 url = https://openapi.tuyaeu.com/v1.0/iot-01/associated-users/actions/authorized-login,                params = None,                body = {'username': 'xxx@gmail.com', 'password': '***', 'country_code': '44', 'schema': 'tuyaSmart'},                t = 1766271035129
+[2025-12-20 23:50:35,377] [tuya-openapi] Response: {
+  "result": {
+    "access_token": "***",
+    "expire_time": 7200,
+    "platform_url": "https://openapi.tuyaeu.com",
+    "refresh_token": "***",
+    "uid": "***"
+  },
+  "success": true,
+  "t": 1766271035362,
+  "tid": "xxx"
+}
+[2025-12-20 23:50:35,377] [tuya-openapi] Request: method = GET,                 url = https://openapi.tuyaeu.com/v1.0/iot-03/devices/bf184xxx/status,                params = None,                body = None,                t = 1766271035377
+[2025-12-20 23:50:35,463] [tuya-openapi] Response: {
+  "result": [
+    {
+      "code": "switch_1",
+      "value": true
+    },
+    {
+      "code": "countdown_1",
+      "value": 0
+    },
+    {
+      "code": "add_ele",
+      "value": 8
+    },
+    {
+      "code": "cur_current",
+      "value": 198
+    },
+    {
+      "code": "cur_power",
+      "value": 172
+    },
+    {
+      "code": "cur_voltage",
+      "value": 2342
+    },
+    {
+      "code": "relay_status",
+      "value": "power_on"
+    },
+    {
+      "code": "light_mode",
+      "value": "none"
+    },
+    {
+      "code": "child_lock",
+      "value": false
+    },
+    {
+      "code": "cycle_time",
+      "value": ""
+    },
+    {
+      "code": "random_time",
+      "value": ""
+    },
+    {
+      "code": "switch_inching",
+      "value": ""
+    },
+    {
+      "code": "overcharge_switch",
+      "value": false
+    }
+  ],
+  "success": true,
+  "t": 1766271035447,
+  "tid": "xxx"
+}
+[2025-12-20 23:50:35,463] [tuya-openapi] Request: method = GET,                 url = https://openapi.tuyaeu.com/v2.0/cloud/thing/bf184xxx/report-logs,                params = {'codes': 'add_ele', 'start_time': 1766185200000, 'end_time': 1766271035463, 'size': 100},                body = None,                t = 1766271035463
+[2025-12-20 23:50:35,814] [tuya-openapi] Response: {
+  "result": {
+    "device_id": "bf184xxx",
+    "has_more": false,
+    "logs": [
+      {
+        "code": "add_ele",
+        "event_time": 1766269680000,
+        "value": "8"
+      },
+      {
+        "code": "add_ele",
+        "event_time": 1766267881000,
+        "value": "8"
+      },
+      {
+        "code": "add_ele",
+        "event_time": 1766266083000,
+        "value": "8"
+      },
+      {
+        "code": "add_ele",
+        "event_time": 1766264285000,
+        "value": "8"
+      },
+      {
+        "code": "add_ele",
+        "event_time": 1766262487000,
+        "value": "8"
+      },
+      {
+        "code": "add_ele",
+        "event_time": 1766260688000,
+        "value": "8"
+      },
+      {
+        "code": "add_ele",
+        "event_time": 1766258890000,
+        "value": "8"
+      },
+      {
+        "code": "add_ele",
+        "event_time": 1766257092000,
+        "value": "8"
+      },
+      {
+        "code": "add_ele",
+        "event_time": 1766255294000,
+        "value": "8"
+      },
+      {
+        "code": "add_ele",
+        "event_time": 1766253495000,
+        "value": "8"
+      },
+      {
+        "code": "add_ele",
+        "event_time": 1766251697000,
+        "value": "8"
+      },
+      {
+        "code": "add_ele",
+        "event_time": 1766249899000,
+        "value": "8"
+      },
+      {
+        "code": "add_ele",
+        "event_time": 1766248101000,
+        "value": "8"
+      },
+      {
+        "code": "add_ele",
+        "event_time": 1766246303000,
+        "value": "8"
+      },
+      {
+        "code": "add_ele",
+        "event_time": 1766244504000,
+        "value": "8"
+      },
+      {
+        "code": "add_ele",
+        "event_time": 1766242706000,
+        "value": "8"
+      },
+      {
+        "code": "add_ele",
+        "event_time": 1766240908000,
+        "value": "8"
+      },
+      {
+        "code": "add_ele",
+        "event_time": 1766239110000,
+        "value": "7"
+      },
+      {
+        "code": "add_ele",
+        "event_time": 1766237311000,
+        "value": "8"
+      },
+      {
+        "code": "add_ele",
+        "event_time": 1766235513000,
+        "value": "7"
+      },
+      {
+        "code": "add_ele",
+        "event_time": 1766233721000,
+        "value": "7"
+      },
+      {
+        "code": "add_ele",
+        "event_time": 1766231923000,
+        "value": "8"
+      },
+      {
+        "code": "add_ele",
+        "event_time": 1766230125000,
+        "value": "8"
+      },
+      {
+        "code": "add_ele",
+        "event_time": 1766228327000,
+        "value": "8"
+      },
+      {
+        "code": "add_ele",
+        "event_time": 1766226528000,
+        "value": "8"
+      },
+      {
+        "code": "add_ele",
+        "event_time": 1766224730000,
+        "value": "8"
+      },
+      {
+        "code": "add_ele",
+        "event_time": 1766222932000,
+        "value": "8"
+      },
+      {
+        "code": "add_ele",
+        "event_time": 1766221134000,
+        "value": "8"
+      },
+      {
+        "code": "add_ele",
+        "event_time": 1766219335000,
+        "value": "7"
+      },
+      {
+        "code": "add_ele",
+        "event_time": 1766217537000,
+        "value": "7"
+      },
+      {
+        "code": "add_ele",
+        "event_time": 1766215739000,
+        "value": "8"
+      },
+      {
+        "code": "add_ele",
+        "event_time": 1766213941000,
+        "value": "7"
+      },
+      {
+        "code": "add_ele",
+        "event_time": 1766212142000,
+        "value": "8"
+      },
+      {
+        "code": "add_ele",
+        "event_time": 1766210344000,
+        "value": "7"
+      },
+      {
+        "code": "add_ele",
+        "event_time": 1766208546000,
+        "value": "8"
+      },
+      {
+        "code": "add_ele",
+        "event_time": 1766206748000,
+        "value": "7"
+      },
+      {
+        "code": "add_ele",
+        "event_time": 1766204950000,
+        "value": "7"
+      },
+      {
+        "code": "add_ele",
+        "event_time": 1766203151000,
+        "value": "8"
+      },
+      {
+        "code": "add_ele",
+        "event_time": 1766201353000,
+        "value": "7"
+      },
+      {
+        "code": "add_ele",
+        "event_time": 1766199555000,
+        "value": "8"
+      },
+      {
+        "code": "add_ele",
+        "event_time": 1766197757000,
+        "value": "7"
+      },
+      {
+        "code": "add_ele",
+        "event_time": 1766195958000,
+        "value": "7"
+      },
+      {
+        "code": "add_ele",
+        "event_time": 1766194160000,
+        "value": "8"
+      },
+      {
+        "code": "add_ele",
+        "event_time": 1766192362000,
+        "value": "7"
+      },
+      {
+        "code": "add_ele",
+        "event_time": 1766190564000,
+        "value": "8"
+      },
+      {
+        "code": "add_ele",
+        "event_time": 1766188766000,
+        "value": "7"
+      },
+      {
+        "code": "add_ele",
+        "event_time": 1766186967000,
+        "value": "7"
+      }
+    ],
+    "total": 1000
+  },
+  "success": true,
+  "t": 1766271035799,
+  "tid": "xxx"
+}
+{"switch_1": 1, "power_w": 17.2, "voltage_v": 234.2, "current_a": 0.198, "energy_delta_kwh": 0.361}
+    
+</pre>
+
+
 Adding a Host - without an interface. Data will be collected from the "Master Item" value added
 <img width="1047" height="558" alt="image" src="https://github.com/user-attachments/assets/1bb8bc73-f43e-403f-a40e-2e505d47cbc2" />
 
